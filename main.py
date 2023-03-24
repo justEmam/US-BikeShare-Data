@@ -170,10 +170,6 @@ while True:
     if eh_nzamk=='q':
         break
 
-def q_check():
-    if city=='q' or month=='q' or day=='q'
-        break
-    q_check()
 
 
 
