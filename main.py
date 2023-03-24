@@ -38,7 +38,7 @@ def user_monthrequest():
             "Which month do you want to know about?, type q to exit")  # Prompts user for a month in numbers or name, idc
         if month == 'q':
             break
-        if month == all:
+        if month == 'all':
             break
 
         try: #The try-except block ensures that both values string and integers are accepted e.g January and 1
