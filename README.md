@@ -19,9 +19,9 @@ The program asks the user to enter a city,month,weekday   and slices the datafra
 
 The program provides the following information:
 #1 Popular times of travel
--most common month
--most common day of week
--most common hour of day
+>most common month
+>most common day of week
+>most common hour of day
 
 
 #2 Popular stations and trip
