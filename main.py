@@ -153,22 +153,22 @@ def get_data(city,month,day):
         print(f"Most common birth year is {mostcommonbirthyear}")
     birthyeardata()
 
+if __name__ == '__main__':
+    while True:
 
-while True:
-
-    user_cityrequest()
-    if city == 'q':
-        break
-    user_monthrequest()
-    if month == 'q':
-        break
-    user_dayrequest()
-    if day =='q':
-        break
-    get_data(city,month,day)
-    eh_nzamk=input("3ayz tany? q to exit")
-    if eh_nzamk=='q':
-        break
+        user_cityrequest()
+        if city == 'q':
+            break
+        user_monthrequest()
+        if month == 'q':
+            break
+        user_dayrequest()
+        if day =='q':
+            break
+        get_data(city,month,day)
+        eh_nzamk=input("3ayz tany? q to exit")
+        if eh_nzamk=='q':
+            break
 
 
 
