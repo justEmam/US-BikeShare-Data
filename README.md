@@ -1,4 +1,4 @@
-Sup sup.
+*Sup sup*.
 This is my first python project after 4 weeks of the beginning of the learning process.
 
 The csv files contain the data for a bike share system for major cities in the United States,
@@ -22,7 +22,6 @@ The program provides the following information:
 -most common month
 -most common day of week
 -most common hour of day
-
 
 
 #2 Popular stations and trip
