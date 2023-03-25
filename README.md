@@ -8,7 +8,7 @@ This is my first python project after 4 weeks of the beginning of the learning p
 
 
 ## Description
-<font size="4">The csv files contain the data for a bike share system for major cities in the United States,
+<font size="10">The csv files contain the data for a bike share system for major cities in the United States,
 * All three of the data files contain the same core six (6) columns:
 * Start Time (e.g., 2017-01-01 00:07:57)
 * End Time (e.g., 2017-01-01 00:20:53)
