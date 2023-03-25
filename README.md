@@ -8,7 +8,7 @@ This is my first python project after 4 weeks of the beginning of the learning p
 
 
 ## Description
-<font size="5">The csv files contain the data for a bike share system for major cities in the United States,
+<font size="5"> The csv files contain the data for a bike share system for major cities in the United States,
 * All three of the data files contain the same core six (6) columns:
 * Start Time (e.g., 2017-01-01 00:07:57)
 * End Time (e.g., 2017-01-01 00:20:53)
@@ -19,7 +19,7 @@ This is my first python project after 4 weeks of the beginning of the learning p
 
 The Chicago and New York City files also have the following two columns:
 * Gender
-* Birth Year</font>
+* Birth Year </font>
 _________________________________________________________________________________________
 
 The program asks the user to enter a city,month,weekday   and slices the dataframe accordingly.
