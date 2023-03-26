@@ -109,16 +109,16 @@ def get_data(city,month,day):
     def commontimes():
         """Gives us the most common months,hours,day of week and hour"""
         if month != 'all':
-            print(f"The most common month is {df['Months'].mode().sum()} !")
+            print(f"The most common month is {df['Months'].mode()[0]} !")
         if day != 'all':
-            print(f"The most common day of the week is {df['Weekdays'].mode().sum()} !")
-        print(f"The most common hour is {df['Hours'].mode().sum()} !\n")
+            print(f"The most common day of the week is {df['Weekdays'].mode()[0]} !")
+        print(f"The most common hour is {df['Hours'].mode()[0]} !\n")
     commontimes()
 
     def commonstations():
         """Prints the most common start stations, most common end stations, and the most common start to end trip"""
-        print(f"The most common start station is {df['Start Station'].mode().sum()}")
-        print(f"The most common end station is {df['End Station'].mode().sum()}")
+        print(f"The most common start station is {df['Start Station'].mode()[0]}")
+        print(f"The most common end station is {df['End Station'].mode()[0]}")
         df['StartToEnd']=df['Start Station']+" to " + df['End Station'] ##Combining the Start to end station
         print(f"The most common start to end trip: ({df['StartToEnd'].mode()[0]})\n")
 
@@ -138,20 +138,20 @@ def get_data(city,month,day):
         if city != 'washington':
             number_of_males=(df['Gender'].value_counts().Male)
             number_of_females = (df['Gender'].value_counts().Female)
-        print(f"Number of males is {number_of_males}")
-        print(f"Number of females is {number_of_females}")
-    gendercount()
+            print(f"Number of males is {number_of_males}")
+            print(f"Number of females is {number_of_females}")
+            gendercount()
 
     def birthyeardata():
         """Gets some birthyear data if the chosen city is NYC or Chicago"""
         if city!= 'washington':
-            earliestbirthyear=int(df['Birth Year'].min().sum()) #Maximum birth year means the minimum #int to get rid of the .0 in the end
-            mostrecentbirthyear=int(df['Birth Year'].max().sum()) #Maximum birth year means most recent!
-            mostcommonbirthyear=int(df['Birth Year'].mode().sum()) #Mode is the most occurred!
-        print(f"Earliest birthyr is {earliestbirthyear}")
-        print(f"Most recent birthyear is {mostrecentbirthyear}")
-        print(f"Most common birth year is {mostcommonbirthyear}")
-    birthyeardata()
+            earliestbirthyear=int(df['Birth Year'].min()[0]) #Maximum birth year means the minimum #int to get rid of the .0 in the end
+            mostrecentbirthyear=int(df['Birth Year'].max()[0]) #Maximum birth year means most recent!
+            mostcommonbirthyear=int(df['Birth Year'].mode()[0]) #Mode is the most occurred!
+            print(f"Earliest birthyr is {earliestbirthyear}")
+            print(f"Most recent birthyear is {mostrecentbirthyear}")
+            print(f"Most common birth year is {mostcommonbirthyear}")
+            birthyeardata()
 
 if __name__ == '__main__':
     while True:
