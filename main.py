@@ -92,7 +92,7 @@ def get_data(city,month,day):
     df= pd.read_csv(files[city])
 
 
-    df['Start Time']=pd.to_datetime(df['Start Time']) #Converts to date ytba3bas
+    df['Start Time']=pd.to_datetime(df['Start Time']) #Converts to datetime datatype
     df['End Time'] = pd.to_datetime(df['End Time'])
 
     df['Months']=pd.DatetimeIndex(df['Start Time']).month #Creates a new column that has all the months
