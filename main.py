@@ -10,7 +10,7 @@ global city,day,month
 
 def user_cityrequest(): #Extracts  city of choice
     global city
-    """This is a function that extracts the city,month and day that the user wants the data for."""
+    """This is a function that extracts the city that the user wants the data for."""
     while True:
 
         city = input("Which city do you want to know about? (Chicago/Washington/New York City), type q to exit") #Asks the user for the city
